@@ -1,68 +1,150 @@
-:root {
+@import "../node_modules/normalize.css/normalize.css";
+
+body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #181818;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  scroll-behavior: smooth;
 }
 
-body {
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ul {
+  list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===================== FONTS ==================== */
+
+@font-face {
+  font-display: swap;
+  font-family: "Biro Script Plus";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/BiroScriptPlusBold/BiroScriptPlus-Bold.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/BiroScriptPlusBold/BiroScriptPlus-Bold.woff2")
+      format("woff2"),
+    url("./assets/fonts/BiroScriptPlusBold/BiroScriptPlus-Bold.woff")
+      format("woff"),
+    url("./assets/fonts/BiroScriptPlusBold/BiroScriptPlus-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Biro Script Plus US";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/BiroScriptPlusBoldUS/BiroScriptUSPlus-Bold.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/BiroScriptPlusBoldUS/BiroScriptUSPlus-Bold.woff2")
+      format("woff2"),
+    url("./assets/fonts/BiroScriptPlusBoldUS/BiroScriptUSPlus-Bold.woff")
+      format("woff"),
+    url("./assets/fonts/BiroScriptPlusBoldUS/BiroScriptUSPlus-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Messina Sans Mono Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/MessinaSansMonoRegular/MessinaSansMono-Regular.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/MessinaSansMonoRegular/MessinaSansMono-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/MessinaSansMonoRegular/MessinaSansMono-Regular.woff")
+      format("woff"),
+    url("./assets/fonts/MessinaSansMonoRegular/MessinaSansMono-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Messina Sans Mono Semi Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/MessinaSansMonoSemiBold/MessinaSansMono-SemiBold.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/MessinaSansMonoSemiBold/MessinaSansMono-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/fonts/MessinaSansMonoSemiBold/MessinaSansMono-SemiBold.woff")
+      format("woff"),
+    url("./assets/fonts/MessinaSansMonoSemiBold/MessinaSansMono-SemiBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Right Grotesk";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.woff2")
+      format("woff2"),
+    url("./assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.woff")
+      format("woff"),
+    url("./assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.ttf")
+      format("truetype");
 }
