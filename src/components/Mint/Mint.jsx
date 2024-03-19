@@ -1,5 +1,11 @@
+import Section from "../Section/Section";
+
 const Mint = () => {
-  return <div>Mint</div>;
+  return (
+    <Section id="mint" title="Are you in?">
+      <div>Mint</div>
+    </Section>
+  );
 };
 
 export default Mint;

@@ -1,23 +1,19 @@
 @import "../node_modules/normalize.css/normalize.css";
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Right Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   color: #fff;
   background-color: #181818;
-  font-synthesis: none;
+  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  scroll-behavior: smooth;
-}
-
-html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,

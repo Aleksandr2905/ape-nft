@@ -1,5 +1,11 @@
+import Section from "../Section/Section";
+
 const Arts = () => {
-  return <div>Arts</div>;
+  return (
+    <Section id="collection" title="COLLECTION">
+      <div>Arts</div>
+    </Section>
+  );
 };
 
 export default Arts;
