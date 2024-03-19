@@ -2,13 +2,12 @@ import styled, { keyframes } from "styled-components";
 import { theme } from "../../stylesheet/theme";
 
 const animation = keyframes`
-  from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 `;
 
 export const BannerContainer = styled.div`
@@ -38,7 +37,7 @@ export const Text = styled.div`
   width: 100%;
   white-space: nowrap;
   animation-name: ${animation};
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 `;
