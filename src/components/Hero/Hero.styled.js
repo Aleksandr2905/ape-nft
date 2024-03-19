@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { theme } from "../../stylesheet/theme";
 
 export const SectionWrapper = styled.section`
+  min-width: 360px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 8px;
 `;
 
 export const Container = styled.div`
-  min-width: 360px;
-  max-width: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@ export const Container = styled.div`
   padding: 36px 64px 19px;
   border-radius: 12px;
   text-align: center;
-  /* margin-top: 60px; */
+  margin-top: 54px;
   background-color: ${theme.color.accent};
   color: ${theme.color.textSecondary};
 `;
@@ -39,10 +39,10 @@ export const MainTitle = styled.h1`
   /* color: ${theme.color.textSecondary}; */
 `;
 
-export const Image = styled.picture`
-  width: 216px;
-  /* height: 284px; */
-`;
+// export const Image = styled.picture`
+//   width: 100%;
+//   height: 284px;
+// `;
 
 export const Button = styled.a`
   border-radius: 8px;

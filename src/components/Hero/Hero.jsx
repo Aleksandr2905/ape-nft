@@ -19,7 +19,7 @@ const Hero = () => {
         <s.AccentTitle>diD yOu seE iT ?</s.AccentTitle>
         <s.MainTitle>YACHT APES</s.MainTitle>
         <s.AccentTitle>Apes aRe eveRywhere</s.AccentTitle>
-        <s.Image style={{ width: "100%" }}>
+        <picture>
           <source
             srcSet={`${imageAdaptive.oneWebpX} 1x, ${imageAdaptive.twoWebpX} 2x`}
           />
@@ -27,7 +27,7 @@ const Hero = () => {
             srcSet={`${imageAdaptive.oneX} 1x, ${imageAdaptive.twoX} 2x`}
           />
           <img src={imageAdaptive.oneX} alt="apes" />
-        </s.Image>
+        </picture>
         <s.Button href="#mint">MEET APES</s.Button>
         <s.Text>
           Yacht Ape is a collection of unique digital apes that you can own in

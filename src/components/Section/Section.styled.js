@@ -24,16 +24,3 @@ export const Title = styled.h2`
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
 `;
-
-export const TitleAbout = styled.h3`
-  font-family: ${theme.fonts.grotesk};
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-  color: ${theme.color.textPrimary};
-
-  & span {
-    color: ${theme.color.accent};
-  }
-`;
