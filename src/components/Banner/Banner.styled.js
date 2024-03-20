@@ -11,14 +11,13 @@ const animation = keyframes`
 `;
 
 export const BannerContainer = styled.div`
-  /* display: flex;
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  gap: 24px; */
   padding: 6px 0px 8px 0px;
-  /* width: 100vw; */
-  width: 957px;
+  width: 100vw;
+  /* max-width: 957px; */
   height: 52px;
   overflow: hidden;
   background-color: ${theme.color.accent};
@@ -33,11 +32,10 @@ export const Text = styled.div`
   line-height: 1;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
-  flex-shrink: 0;
   width: 100%;
   white-space: nowrap;
   animation-name: ${animation};
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 `;
