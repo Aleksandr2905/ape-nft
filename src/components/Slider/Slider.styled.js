@@ -8,7 +8,6 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const Button = styled.button`
-  font: 400 24px / 100% "Biro Script Plus", sans-serif;
   font-family: ${theme.fonts.biro};
   font-size: 24px;
   font-weight: 400;

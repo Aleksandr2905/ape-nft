@@ -50,3 +50,16 @@ export const IconWrapper = styled.div`
   width: 24px;
   height: 24px;
 `;
+
+export const WrapperCardImg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 24px;
+`;
+
+export const Image = styled.img`
+  height: 256px;
+  border-radius: 20px;
+`;

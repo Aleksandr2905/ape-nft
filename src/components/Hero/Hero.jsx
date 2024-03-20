@@ -22,9 +22,11 @@ const Hero = () => {
         <picture>
           <source
             srcSet={`${imageAdaptive.oneWebpX} 1x, ${imageAdaptive.twoWebpX} 2x`}
+            type="image/webp"
           />
           <source
             srcSet={`${imageAdaptive.oneX} 1x, ${imageAdaptive.twoX} 2x`}
+            type="image/jpeg"
           />
           <img src={imageAdaptive.oneX} alt="apes" />
         </picture>

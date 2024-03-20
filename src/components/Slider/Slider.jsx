@@ -27,13 +27,14 @@ const Slider = ({ cards }) => {
       <Swiper
         ref={refSlider}
         modules={[Navigation]}
-        spaceBetween={50}
+        spaceBetween={24}
         slidesPerView={1}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
         enabled={{ parallax: true }}
+        centeredSlidesBounds={true}
       >
         {slideCards}
       </Swiper>
