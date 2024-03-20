@@ -22,4 +22,7 @@ export const theme = {
     desktop: "1280px",
     desktopMax: "1440px",
   },
+  animation: {
+    transition: "all 0.3s ease",
+  },
 };

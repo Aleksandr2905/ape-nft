@@ -50,7 +50,7 @@ export const Button = styled.a`
   margin-bottom: 12px;
   width: 100%;
   height: 41px;
-  transition: all 0.3s ease;
+  transition: ${theme.animation.transition};
   backdrop-filter: blur(12px);
   background-color: ${theme.color.bgBtnPrimary};
 

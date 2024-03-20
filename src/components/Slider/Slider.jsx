@@ -4,15 +4,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { useRef } from "react";
 import Card from "../Card/Card";
+import * as s from "./Slider.styled";
 
 const Slider = ({ cards }) => {
   const refSlider = useRef(null);
 
   const handlePrev = () => {
-    refSlider.current.swiper.slidePrev(1000);
+    refSlider.current.swiper.slidePrev(500);
   };
   const handleNext = () => {
-    refSlider.current.swiper.slideNext(1000);
+    refSlider.current.swiper.slideNext(500);
   };
 
   const slideCards = cards.map((card) => (
@@ -26,7 +27,7 @@ const Slider = ({ cards }) => {
       <Swiper
         ref={refSlider}
         modules={[Navigation]}
-        // spaceBetween={50}
+        spaceBetween={50}
         slidesPerView={1}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -36,8 +37,10 @@ const Slider = ({ cards }) => {
       >
         {slideCards}
       </Swiper>
-      <button onClick={handlePrev}>Prev</button>
-      <button onClick={handleNext}>Next</button>
+      <s.ButtonWrapper>
+        <s.Button onClick={handlePrev}>Prev</s.Button>
+        <s.Button onClick={handleNext}>Next</s.Button>
+      </s.ButtonWrapper>
     </>
   );
 };
