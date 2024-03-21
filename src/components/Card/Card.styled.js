@@ -61,5 +61,5 @@ export const WrapperCardImg = styled.div`
 
 export const Image = styled.img`
   height: 100%;
-  border-radius: 20px;
+  border-radius: 24px;
 `;

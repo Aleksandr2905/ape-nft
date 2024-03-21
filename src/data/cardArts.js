@@ -183,3 +183,26 @@ export const cardsArts = [
     alt: "slide 14",
   },
 ];
+
+// const generateFilename = (index, type, ext) =>
+//   `../assets/images/arts/arts-${index
+//     .toString()
+//     .padStart(2, "0")}@${type}.${ext}`;
+
+// const createCard = (id, alt) => ({
+//   id,
+//   name: "img",
+//   oneX: generateFilename(id, "1x", "jpg"),
+//   twoX: generateFilename(id, "2x", "jpg"),
+//   webp: generateFilename(id, "1x", "webp"),
+//   webp2X: generateFilename(id, "2x", "webp"),
+//   alt,
+// });
+
+// export const cardsArts = Array.from({ length: 14 }, (_, index) => {
+//   const id = index + 1;
+//   const alt = `slide ${id}`;
+//   return createCard(id, alt);
+// });
+
+// console.log(cardsArts);
