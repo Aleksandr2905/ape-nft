@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import X from "../../assets/icons/add-sharp.svg?react";
 import { theme } from "../../stylesheet/theme";
+import X from "../../assets/icons/add-sharp.svg?react";
 
-export const WrapperDiscription = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
 `;
 
 export const Icon = styled(X)`
   width: 36px;
   height: 36px;
+  margin: 0 auto;
 `;
 
 export const Text = styled.p`

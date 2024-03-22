@@ -7,6 +7,7 @@ export const theme = {
     accent: "#dc3b5a",
     textPrimary: "#fff",
     textSecondary: "#1e1e1e",
+    placeholder: "rgba(255, 255, 255, 0.24)",
   },
   fonts: {
     grotesk: "Right Grotesk",
