@@ -30,7 +30,7 @@ const Form = () => {
         () => {
           setTimeout(() => {
             setButtonText("MINT");
-          }, 5000);
+          }, 3000);
         }
       );
       reset();

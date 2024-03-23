@@ -8,6 +8,7 @@ export const theme = {
     textPrimary: "#fff",
     textSecondary: "#1e1e1e",
     placeholder: "rgba(255, 255, 255, 0.24)",
+    discord: "#5A65F2",
   },
   fonts: {
     grotesk: "Right Grotesk",

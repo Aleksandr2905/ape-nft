@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../stylesheet/theme";
 
 export const SectionWrapper = styled.section`
+  position: relative;
   min-width: 360px;
   max-width: 480px;
   margin: 0 auto;

@@ -18,6 +18,10 @@ export const Icons = styled.div`
   height: 48px;
   backdrop-filter: blur(12px);
   background-color: ${theme.color.bgSecondary};
+
+  & svg {
+    fill: ${theme.color.discord};
+  }
 `;
 
 export const Input = styled.input`
