@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../helpers/validation";
 import InputForm from "../Input/InputForm";
 import * as s from "./Form.styled";
-import { Notify } from "notiflix/build/notiflix-notify-aio";
+import { Report } from "notiflix/build/notiflix-report-aio";
 
 const Form = () => {
   const [buttonText, setButtonText] = useState("MINT");
@@ -20,9 +20,20 @@ const Form = () => {
 
   const onSubmit = ({ username, wallet }) => {
     try {
+      const user = username.replace("@", "").toUpperCase();
+      const walletAddress = wallet.toUpperCase();
       setButtonText("MINTED");
+      Report.success(
+        "Congratulations!",
+        `Dear, ${user}, You have successfully monetized! Your wallet: ${walletAddress} Thank you for using our service.`,
+        "Ok",
+        () => {
+          setTimeout(() => {
+            setButtonText("MINT");
+          }, 5000);
+        }
+      );
       reset();
-      Notify.success(`"${username}, you have successfully minted!!!"`);
     } catch (error) {
       setButtonText("ERROR");
     }
