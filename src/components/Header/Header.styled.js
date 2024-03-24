@@ -19,4 +19,9 @@ export const Icon = styled.div`
   margin-top: 8px;
   width: 48px;
   height: 32px;
+  cursor: pointer;
+
+  & svg {
+    fill: ${theme.color.textSecondary};
+  }
 `;

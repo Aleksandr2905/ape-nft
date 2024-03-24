@@ -11,10 +11,15 @@ const Navigation = () => {
 
   useEffect(() => {
     setShowMobileMenu(screen === "mobile");
-  }, []);
+  }, [screen]);
 
   const toggleNavigationVisibility = () => {
     setIsOpenNavigation(!isOpenNavigation);
+    // if (!isOpenNavigation) {
+    //   document.body.style.overflow = "hidden";
+    // } else {
+    //   document.body.style.overflow = "auto";
+    // }
   };
 
   return (

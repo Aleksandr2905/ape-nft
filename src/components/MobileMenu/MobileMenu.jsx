@@ -2,32 +2,48 @@ import { createPortal } from "react-dom";
 import Logo from "../../assets/icons/logo.svg?react";
 import { modalNavBtn } from "../../data/modalNavBtn";
 import Footer from "../Footer/Footer";
+import { social } from "../../data/social";
+import * as s from "./MobileMenu.styled";
 
 const modal = document.getElementById("modal");
 
 const MobileMenu = ({ onClose }) => {
   return createPortal(
-    <div>
-      <div>
-        <a href="#">
-          <Logo />
+    <s.Wrapper>
+      <s.Container>
+        <a href="/" aria-label="Link to page Ape NFT">
+          <s.IconLogo>
+            <Logo />
+          </s.IconLogo>
         </a>
-        <div>
-          <button>Close</button>
-          <a href="">discord</a>
-          <a href="">opensea</a>
-          <a href="">twitter</a>
-        </div>
-      </div>
-      <div>
+        <s.NavWrap>
+          <s.CloseBtn type="button" onClick={onClose}>
+            Close
+          </s.CloseBtn>
+          <s.SocialWrap>
+            {social.map(({ id, link, icon, ariaLabel }) => (
+              <s.SocialBtn
+                key={id}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={ariaLabel}
+              >
+                <s.Icon>{icon()}</s.Icon>
+              </s.SocialBtn>
+            ))}
+          </s.SocialWrap>
+        </s.NavWrap>
+      </s.Container>
+      <s.NavBtnWrap>
         {modalNavBtn.map((item) => (
-          <a key={item.id} href={`${item.id}`} onClick={onClose}>
+          <s.NavBtn key={item.id} href={`${item.id}`} onClick={onClose}>
             {item.text}
-          </a>
+          </s.NavBtn>
         ))}
-      </div>
+      </s.NavBtnWrap>
       <Footer />
-    </div>,
+    </s.Wrapper>,
     modal
   );
 };

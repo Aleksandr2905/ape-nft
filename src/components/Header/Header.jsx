@@ -5,7 +5,7 @@ import * as s from "./Header.styled";
 const Header = () => {
   return (
     <s.Container>
-      <a href="/">
+      <a href="/" aria-label="Link to page Ape NFT">
         <s.Icon>
           <Logo />
         </s.Icon>
