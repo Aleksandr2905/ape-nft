@@ -7,13 +7,27 @@ export const Wrapper = styled.ul`
   gap: 16px;
 `;
 
+export const WrapItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
 export const Item = styled.li`
   display: flex;
   flex-direction: row;
   gap: 8px;
+  position: relative;
   padding: 8px 8px 10px;
   cursor: pointer;
   counter-increment: list-counter;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 592px;
+    margin: auto;
+    padding: 18px 16px 24px 180px;
+    gap: 22px;
+  }
 
   &:before {
     content: "[ " counter(list-counter) " ]";
@@ -42,23 +56,48 @@ export const Item = styled.li`
     &:before {
     color: ${theme.color.textPrimary};
   }
-  > ${Content} > ${Title} {
+  > ${WrapItem} > ${Content} > ${Title} {
     color: ${theme.color.accent};
   }
-  > ${Content} > ${Text} {
+  > ${WrapItem} > ${Content} > ${Text} {
     display: block;
   }
+   > ${WrapItem}> ${ImageWrap} {
+    @media screen and (min-width: ${theme.breakpoints.tablet}) {
+      display: block;
+  }
+
  `}
 `;
 
-export const Image = styled.img`
+export const ImageWrap = styled.div`
   display: none;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+    width: auto;
+    height: 183px;
+    border-radius: 16px;
+    overflow: hidden;
+    transform: rotate(-16deg);
+  }
+`;
+
+export const Image = styled.img`
+  object-fit: cover;
+  height: 100%;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    gap: 12px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -72,6 +111,10 @@ export const Title = styled.h3`
 
   &:hover {
     color: ${theme.color.accent};
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 32px;
   }
 `;
 

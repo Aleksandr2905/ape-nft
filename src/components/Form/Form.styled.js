@@ -6,6 +6,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 248px;
+    margin: 0 auto;
+  }
 `;
 
 export const Button = styled.button`

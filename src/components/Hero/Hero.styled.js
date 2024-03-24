@@ -3,8 +3,8 @@ import { theme } from "../../stylesheet/theme";
 
 export const SectionWrapper = styled.section`
   position: relative;
-  min-width: 360px;
-  max-width: 480px;
+  min-width: ${theme.breakpoints.mobileMin};
+  max-width: ${theme.breakpoints.mobileMax};
   margin: 0 auto;
   padding: 0 8px;
 `;
@@ -28,7 +28,6 @@ export const AccentTitle = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 1.69;
-  /* color: ${theme.color.textSecondary}; */
 `;
 
 export const MainTitle = styled.h1`
@@ -37,13 +36,7 @@ export const MainTitle = styled.h1`
   line-height: 1;
   letter-spacing: 0.01em;
   margin-bottom: 8px;
-  /* color: ${theme.color.textSecondary}; */
 `;
-
-// export const Image = styled.picture`
-//   width: 100%;
-//   height: 284px;
-// `;
 
 export const Button = styled.a`
   border-radius: 8px;
@@ -65,6 +58,4 @@ export const Text = styled.p`
   font-size: 12px;
   line-height: 1.17;
   text-transform: uppercase;
-  /* text-align: center; */
-  /* color: ${theme.color.textSecondary}; */
 `;

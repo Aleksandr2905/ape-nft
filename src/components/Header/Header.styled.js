@@ -8,10 +8,9 @@ export const Container = styled.header`
   position: absolute;
   right: 0px;
   left: 0px;
-  min-width: 360px;
-  max-width: 480px;
-  margin: 0 8px;
-  padding: 8px 8px 0;
+  min-width: ${theme.breakpoints.mobileMin};
+  max-width: ${theme.breakpoints.mobileMax};
+  padding: 8px 16px 0;
   z-index: 10;
 `;
 

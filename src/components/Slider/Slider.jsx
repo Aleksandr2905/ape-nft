@@ -5,9 +5,18 @@ import "swiper/css/navigation";
 import { useRef } from "react";
 import Card from "../Card/Card";
 import * as s from "./Slider.styled";
+import { theme } from "../../stylesheet/theme";
 
 const Slider = ({ cards }) => {
   const refSlider = useRef(null);
+  const breakpoints = {
+    [theme.breakpoints.desktop.slice(0, -2)]: {
+      slidesPerView: 4,
+    },
+    [theme.breakpoints.tablet.slice(0, -2)]: {
+      slidesPerView: 2,
+    },
+  };
 
   const handlePrev = () => {
     refSlider.current.swiper.slidePrev(500);
@@ -33,8 +42,7 @@ const Slider = ({ cards }) => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        enabled={{ parallax: true }}
-        centeredSlidesBounds={true}
+        breakpoints={breakpoints}
       >
         {slideCards}
       </Swiper>

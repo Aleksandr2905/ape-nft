@@ -17,9 +17,14 @@ export const Text = styled.p`
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  text-align: center;
+  text-align: start;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 128px;
+    margin-left: auto;
+  }
 `;
 
 export const Title = styled.h2`
@@ -47,8 +52,12 @@ export const IconWrapper = styled.div`
   align-items: center;
   margin-left: auto;
   padding: 12px;
-  width: 24px;
-  height: 24px;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    fill: ${theme.color.textPrimary};
+  }
 `;
 
 export const WrapperCardImg = styled.div`
@@ -62,4 +71,9 @@ export const WrapperCardImg = styled.div`
 export const Image = styled.img`
   height: 100%;
   border-radius: 24px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 284px;
+    height: 336px;
+  }
 `;

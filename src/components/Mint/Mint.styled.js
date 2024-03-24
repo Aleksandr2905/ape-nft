@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 397px;
+    gap: 24px;
+    margin: 0 auto;
+  }
 `;
 
 export const Icon = styled(X)`

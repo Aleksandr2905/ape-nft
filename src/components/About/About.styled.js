@@ -1,6 +1,19 @@
 import styled from "styled-components";
 import { theme } from "../../stylesheet/theme";
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 592px;
+    margin: 0 auto;
+  }
+`;
+
 export const Title = styled.h2`
   font-family: ${theme.fonts.grotesk};
   font-size: 40px;
@@ -8,22 +21,38 @@ export const Title = styled.h2`
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 16px;
+  white-space: pre-wrap;
   color: ${theme.color.textPrimary};
 
   & span {
     color: ${theme.color.accent};
   }
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 269px;
+    font-size: 60px;
+    white-space: normal;
+    margin-bottom: 68px;
+  }
 `;
 
 export const Text = styled.p`
+  min-width: 216px;
   font-family: ${theme.fonts.messinaReg};
   font-size: 16px;
   font-weight: 400;
   line-height: 1.19;
+  text-indent: 50%;
   text-transform: uppercase;
   text-align: right;
   margin-bottom: 36px;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 275px;
+    text-indent: initial;
+    white-space: pre-wrap;
+  }
 `;
 
 export const WrapSecondaryText = styled.div`
@@ -33,6 +62,12 @@ export const WrapSecondaryText = styled.div`
   flex-direction: column;
   margin-bottom: 40px;
   gap: 16px;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 269px;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
 `;
 
 export const SecondaryText = styled.p`
@@ -43,4 +78,19 @@ export const SecondaryText = styled.p`
   text-transform: uppercase;
   text-align: center;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+`;
+
+export const Img = styled.img`
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 313px;
+    height: 422px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 `;
