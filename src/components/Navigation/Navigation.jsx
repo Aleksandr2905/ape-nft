@@ -15,11 +15,11 @@ const Navigation = () => {
 
   const toggleNavigationVisibility = () => {
     setIsOpenNavigation(!isOpenNavigation);
-    // if (!isOpenNavigation) {
-    //   document.body.style.overflow = "hidden";
-    // } else {
-    //   document.body.style.overflow = "auto";
-    // }
+    if (showMobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   };
 
   return (
