@@ -1,8 +1,17 @@
-# React + Vite
+Ape NFT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Yacht Ape NFT Collection, where you can own unique digital apes in NFT format, each artwork telling a story of a journey. This README provides an overview of the collection and its features.
 
-Currently, two official plugins are available:
+Features
+Unique digital ape artworks
+Owners receive a percentage of sales
+Upcoming releases: new collection, Ape Slam Game, global fund token
+FAQ section explaining NFT collections, purchasing, selling, and owner rights
+Getting Started
+Visit Yacht Ape NFT Collection
+Explore the collection and upcoming releases
+Join the Yacht Ape community to receive limited edition NFTs
+Support
+For any questions or assistance, contact us at Yacht Ape Support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thank you for being a part of the Yacht Ape NFT Collection community!
