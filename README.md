@@ -31,13 +31,4 @@ Thank you for being a part of the Yacht Ape NFT Collection community!
 
 # Technologies used
 
-HTML5
-CSS3
-JavaScript
-React
-Notiflix
-React Hook Form
-React Responsive
-Styled Components
-Swiper
-Yup
+HTML5, CSS3, JavaScript, React, Notiflix, React Hook Form, React Responsive, Styled Components, Swiper, Yup
