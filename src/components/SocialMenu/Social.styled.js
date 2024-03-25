@@ -33,4 +33,14 @@ export const Icon = styled.div`
       fill: ${theme.color.textPrimary};
     }
   }
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 24px;
+    height: 24px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;

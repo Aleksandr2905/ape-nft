@@ -19,10 +19,12 @@ const Hero = () => {
       <s.SectionWrapper>
         <Header />
         <s.Container>
-          <s.AccentTitle>diD yOu seE iT ?</s.AccentTitle>
-          <s.MainTitle>YACHT APES</s.MainTitle>
-          <s.AccentTitle>Apes aRe eveRywhere</s.AccentTitle>
-          <picture>
+          <s.WrapTitle>
+            <s.AccentTitle>diD yOu seE iT ?</s.AccentTitle>
+            <s.MainTitle>YACHT APES</s.MainTitle>
+            <s.AccentTitle>Apes aRe eveRywhere</s.AccentTitle>
+          </s.WrapTitle>
+          <s.Image>
             <source
               srcSet={`${imageAdaptive.oneWebpX} 1x, ${imageAdaptive.twoWebpX} 2x`}
               type="image/webp"
@@ -32,12 +34,14 @@ const Hero = () => {
               type="image/jpeg"
             />
             <img src={imageAdaptive.oneX} alt="apes" />
-          </picture>
-          <s.Button href="#mint">MEET APES</s.Button>
-          <s.Text>
-            Yacht Ape is a collection of unique digital apes that you can own in
-            NFT format
-          </s.Text>
+          </s.Image>
+          <s.SecondaryBlock>
+            <s.Button href="#mint">MEET APES</s.Button>
+            <s.Text>
+              Yacht Ape is a collection of unique digital apes that you can own
+              in NFT format
+            </s.Text>
+          </s.SecondaryBlock>
         </s.Container>
       </s.SectionWrapper>
     </>

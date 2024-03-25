@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import { theme } from "../../stylesheet/theme";
 
-// проверить стили
-
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 8px;
+  border-radius: inherit;
   backdrop-filter: blur(12px);
   transition: ${theme.animation.transition};
   background: ${theme.color.bgBtnPrimary};

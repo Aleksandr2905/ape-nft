@@ -8,7 +8,6 @@ export const Section = styled.section`
   padding: 0 8px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    min-width: none;
     max-width: none;
     padding: 0 16px;
   }

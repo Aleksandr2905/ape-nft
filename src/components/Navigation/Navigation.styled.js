@@ -4,13 +4,14 @@ import { theme } from "../../stylesheet/theme";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
+  border-radius: 8px;
 `;
 
 export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: inherit;
   padding: 10px;
   width: 48px;
   height: 48px;
