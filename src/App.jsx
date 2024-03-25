@@ -10,7 +10,6 @@ import Mint from "./components/Mint/Mint";
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <Hero />
       <About />
       <MindMap />

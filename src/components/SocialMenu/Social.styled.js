@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    gap: 16px;
+  }
 `;
 
 export const Button = styled.a`
@@ -17,6 +21,11 @@ export const Button = styled.a`
   height: 48px;
   backdrop-filter: blur(12px);
   background: ${theme.color.bgBtnPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 export const Icon = styled.div`

@@ -12,6 +12,11 @@ export const Wrapper = styled.div`
     gap: 24px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 581px;
+    gap: 40px;
+  }
 `;
 
 export const Icon = styled(X)`
@@ -28,4 +33,9 @@ export const Text = styled.p`
   text-transform: uppercase;
   text-align: center;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.21;
+  }
 `;

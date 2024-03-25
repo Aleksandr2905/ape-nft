@@ -8,9 +8,11 @@ export const Wrapper = styled.ul`
 `;
 
 export const WrapItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 export const Item = styled.li`
@@ -25,7 +27,14 @@ export const Item = styled.li`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     width: 592px;
     margin: auto;
-    padding: 18px 16px 24px 180px;
+    padding: 24px;
+    gap: 22px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 1034px;
+    margin: auto;
+    padding: 18px 16px 24px 297px;
     gap: 22px;
   }
 
@@ -39,6 +48,12 @@ export const Item = styled.li`
     line-height: 1;
     transition: ${theme.animation.transition};
     color: ${theme.color.accent};
+
+    @media screen and (min-width: ${theme.breakpoints.desktop}) {
+      padding-top: 14px;
+      font-size: 24px;
+      line-height: 1.67;
+    }
   }
 
   &:hover::before {
@@ -83,6 +98,13 @@ export const ImageWrap = styled.div`
     overflow: hidden;
     transform: rotate(-16deg);
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: auto;
+    height: 282px;
+    border-radius: 24px;
+    transform: rotate(-8deg);
+  }
 `;
 
 export const Image = styled.img`
@@ -97,6 +119,11 @@ export const Content = styled.div`
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     gap: 12px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 635px;
+    gap: 36px;
   }
 `;
 
@@ -116,6 +143,10 @@ export const Title = styled.h3`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 32px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 64px;
+  }
 `;
 
 export const Text = styled.p`
@@ -126,4 +157,9 @@ export const Text = styled.p`
   line-height: 1.17;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
 `;

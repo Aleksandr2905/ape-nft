@@ -10,4 +10,10 @@ export const Copyright = styled.p`
   text-align: center;
   margin-bottom: 24px;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 40px;
+  }
 `;

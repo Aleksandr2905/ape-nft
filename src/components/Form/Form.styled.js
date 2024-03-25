@@ -11,6 +11,11 @@ export const Form = styled.form`
     width: 248px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 397px;
+    gap: 8px;
+  }
 `;
 
 export const Button = styled.button`
@@ -31,6 +36,14 @@ export const Button = styled.button`
 
   &:hover {
     color: ${theme.color.textSecondary};
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    border-radius: 12px;
+    padding: 16px 20px;
+    height: 70px;
+    font-size: 28px;
+    line-height: 1.21;
   }
 `;
 

@@ -17,6 +17,10 @@ export const Container = styled.header`
     max-width: none;
     padding: 12px 28px 0;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    padding: 12px 54px 0;
+  }
 `;
 
 export const Icon = styled.div`
@@ -27,5 +31,10 @@ export const Icon = styled.div`
 
   & svg {
     fill: ${theme.color.textSecondary};
+
+    @media screen and (min-width: ${theme.breakpoints.desktop}) {
+      width: 72px;
+      height: 50px;
+    }
   }
 `;

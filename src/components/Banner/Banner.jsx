@@ -4,8 +4,6 @@ import { useGSAP } from "@gsap/react";
 import X from "../../assets/icons/add-sharp.svg?react";
 import * as s from "./Banner.styled";
 
-// gsap.registerPlugin(useGSAP);
-
 const Banner = () => {
   const textRef = useRef(null);
   const spanRef = useRef(null);
@@ -26,18 +24,26 @@ const Banner = () => {
   return (
     <s.BannerContainer>
       <s.Text ref={textRef}>
-        <span ref={spanRef}>Destroy stereotypes</span>
-        <s.Icons>
-          <X />
-        </s.Icons>
-        <span>HAVE NO LIMITS</span>
-        <s.Icons>
-          <X />
-        </s.Icons>
-        <span>Break rules</span>
-        <s.Icons>
-          <X />
-        </s.Icons>
+        <span ref={spanRef}>
+          Destroy stereotypes{" "}
+          <s.Icons>
+            <X />
+          </s.Icons>
+        </span>
+
+        <span>
+          HAVE NO LIMITS{" "}
+          <s.Icons>
+            <X />
+          </s.Icons>
+        </span>
+
+        <span>
+          Break rules{" "}
+          <s.Icons>
+            <X />
+          </s.Icons>
+        </span>
       </s.Text>
     </s.BannerContainer>
   );

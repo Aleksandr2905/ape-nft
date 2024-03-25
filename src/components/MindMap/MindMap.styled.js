@@ -8,4 +8,9 @@ export const List = styled.ul`
   gap: 24px;
   width: 592px;
   margin: 0 auto;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 1032px;
+    grid-template-columns: repeat(auto-fill, 504px);
+  }
 `;

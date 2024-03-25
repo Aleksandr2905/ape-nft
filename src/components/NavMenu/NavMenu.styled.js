@@ -15,7 +15,8 @@ export const Button = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  width: 48px;
+  padding: 10px 0;
   border: none;
   font-family: ${theme.fonts.messinaReg};
   font-size: 12px;
@@ -29,5 +30,12 @@ export const Button = styled.a`
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.color.textPrimary};
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 1.19;
   }
 `;

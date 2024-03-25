@@ -6,6 +6,10 @@ export const WrapperInput = styled.div`
   align-items: flex-start;
   position: relative;
   height: 60px;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    height: 80px;
+  }
 `;
 
 export const Icons = styled.div`
@@ -21,6 +25,12 @@ export const Icons = styled.div`
 
   & svg {
     fill: ${theme.color.discord};
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px 0 0 12px;
   }
 `;
 
@@ -58,6 +68,13 @@ export const Input = styled.input`
       ${(props) =>
         props.$errors ? `${theme.color.accent}` : `${theme.color.textPrimary}`};
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    border-radius: 0 12px 12px 0;
+    height: 64px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
 `;
 
 export const Error = styled.p`
@@ -71,4 +88,9 @@ export const Error = styled.p`
   text-transform: uppercase;
   text-align: right;
   color: ${theme.color.accent};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 `;

@@ -31,6 +31,15 @@ export const Container = styled.div`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     height: 421px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    height: 677px;
+    margin-top: 16px;
+  }
+`;
+
+export const Content = styled.div`
+  position: relative;
 `;
 
 export const WrapTitle = styled.div`
@@ -43,6 +52,11 @@ export const WrapTitle = styled.div`
     align-items: flex-start;
     margin-top: 96px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    max-width: 1019px;
+    padding-top: 36px;
+  }
 `;
 
 export const AccentTitle = styled.p`
@@ -54,6 +68,29 @@ export const AccentTitle = styled.p`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 20px;
     line-height: 1.65;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.67;
+  }
+`;
+
+export const AccentTitleSecond = styled.p`
+  font-family: ${theme.fonts.biro};
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.69;
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.67;
+    margin-left: 120px;
   }
 `;
 
@@ -71,20 +108,33 @@ export const MainTitle = styled.h1`
     word-spacing: 154px;
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 164px;
+    word-spacing: 240px;
+    margin-bottom: 30px;
+  }
 `;
 
-export const Image = styled.picture`
-  display: flex;
+export const Image = styled.img`
   width: 216px;
   height: 284px;
+  margin: auto;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     position: absolute;
     width: 283px;
     height: 386px;
-    left: 206px;
-    bottom: 0;
+    left: 132px;
+    bottom: -11px;
     z-index: 5;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 463px;
+    height: 612px;
+    left: 246px;
+    bottom: -50px;
   }
 `;
 
@@ -102,6 +152,13 @@ export const SecondaryBlock = styled.div`
     margin-left: auto;
     z-index: 5;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 337px;
+    gap: 28px;
+    right: 0;
+    bottom: 20px;
+  }
 `;
 
 export const Button = styled.a`
@@ -110,6 +167,10 @@ export const Button = styled.a`
   margin-bottom: 12px;
   width: 100%;
   height: 41px;
+  font-family: ${theme.fonts.grotesk};
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.19;
   transition: ${theme.animation.transition};
   backdrop-filter: blur(12px);
   background-color: ${theme.color.bgBtnPrimary};
@@ -120,6 +181,14 @@ export const Button = styled.a`
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    border-radius: 12px;
+    padding: 16px 20px;
+    height: 70px;
+    font-size: 28px;
+    line-height: 1.21;
   }
 `;
 
@@ -132,5 +201,11 @@ export const Text = styled.p`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     text-align: justify;
     text-indent: 40%;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    text-indent: 24%;
+    font-size: 16px;
+    line-height: 1.19;
   }
 `;

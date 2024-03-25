@@ -8,8 +8,13 @@ export const WrapperCardText = styled.div`
   border-radius: 12px;
   padding: 24px 12px;
   height: 242px;
-  margin-bottom: 24px;
   background-color: ${theme.color.bgSecondary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    height: 480px;
+    border-radius: 24px;
+    padding: 24px;
+  }
 `;
 
 export const Text = styled.p`
@@ -25,6 +30,13 @@ export const Text = styled.p`
     width: 128px;
     margin-left: auto;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 228px;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 1.21;
+  }
 `;
 
 export const Title = styled.h2`
@@ -34,6 +46,10 @@ export const Title = styled.h2`
   line-height: 1;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 64px;
+  }
 `;
 
 export const WrapperCardLink = styled.a`
@@ -45,6 +61,12 @@ export const WrapperCardLink = styled.a`
   height: 242px;
   margin-bottom: 24px;
   background-color: ${theme.color.accent};
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    height: 480px;
+    border-radius: 24px;
+    padding: 24px;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -57,6 +79,11 @@ export const IconWrapper = styled.div`
     width: 24px;
     height: 24px;
     fill: ${theme.color.textPrimary};
+
+    @media screen and (min-width: ${theme.breakpoints.desktop}) {
+      width: 64px;
+      height: 64px;
+    }
   }
 `;
 
@@ -66,9 +93,6 @@ export const WrapperCardImg = styled.div`
   justify-content: center;
   flex-direction: row;
   margin-bottom: 24px;
-`;
-
-export const Image = styled.img`
   height: 100%;
   border-radius: 24px;
 
@@ -76,4 +100,15 @@ export const Image = styled.img`
     width: 284px;
     height: 336px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 240px;
+    height: 280px;
+  }
+`;
+
+export const Image = styled.img`
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
 `;

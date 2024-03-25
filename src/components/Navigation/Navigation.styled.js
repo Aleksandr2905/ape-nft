@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   border-radius: 8px;
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    border-radius: 12px;
+  }
 `;
 
 export const Button = styled.button`
@@ -29,5 +33,12 @@ export const Button = styled.button`
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.color.textPrimary};
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 1.19;
   }
 `;

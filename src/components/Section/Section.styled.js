@@ -11,6 +11,10 @@ export const Section = styled.section`
     max-width: none;
     padding: 0 16px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    padding: 0 16px;
+  }
 `;
 
 export const Container = styled.div`
@@ -21,6 +25,10 @@ export const Container = styled.div`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     padding: 0 72px;
     margin-top: 80px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    margin-top: 120px;
   }
 `;
 
@@ -37,6 +45,12 @@ export const Title = styled.h2`
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     margin-bottom: 40px;
     font-size: 80px;
+    line-height: 1;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    margin-bottom: 80px;
+    font-size: 160px;
     line-height: 1;
   }
 `;

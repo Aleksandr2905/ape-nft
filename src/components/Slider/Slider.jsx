@@ -42,6 +42,7 @@ const Slider = ({ cards }) => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
+        centeredSlidesBounds={true}
         breakpoints={breakpoints}
       >
         {slideCards}

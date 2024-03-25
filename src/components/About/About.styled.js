@@ -12,6 +12,11 @@ export const Wrapper = styled.div`
     width: 592px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 1032px;
+    margin: 0 auto;
+  }
 `;
 
 export const Title = styled.h2`
@@ -34,6 +39,12 @@ export const Title = styled.h2`
     white-space: normal;
     margin-bottom: 68px;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 538px;
+    font-size: 120px;
+    margin-bottom: 56px;
+  }
 `;
 
 export const Text = styled.p`
@@ -53,6 +64,13 @@ export const Text = styled.p`
     text-indent: initial;
     white-space: pre-wrap;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 409px;
+    font-size: 24px;
+    line-height: 1.21;
+    margin-bottom: 0;
+  }
 `;
 
 export const WrapSecondaryText = styled.div`
@@ -67,6 +85,12 @@ export const WrapSecondaryText = styled.div`
     width: 269px;
     gap: 24px;
     margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 417px;
+    gap: 36px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -83,6 +107,11 @@ export const SecondaryText = styled.p`
     font-size: 16px;
     line-height: 1.19;
   }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.21;
+  }
 `;
 
 export const Img = styled.img`
@@ -92,5 +121,10 @@ export const Img = styled.img`
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.desktop}) {
+    width: 492px;
+    height: 662px;
   }
 `;
