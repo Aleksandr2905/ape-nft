@@ -11,7 +11,7 @@ const Banner = () => {
   useGSAP(() => {
     gsap.fromTo(
       textRef.current,
-      { x: 0 + "5px" + "-5px" },
+      { x: "100%" },
       {
         x: -spanRef.current.clientWidth,
         duration: 10,
@@ -30,14 +30,12 @@ const Banner = () => {
             <X />
           </s.Icons>
         </span>
-
         <span>
           HAVE NO LIMITS{" "}
           <s.Icons>
             <X />
           </s.Icons>
         </span>
-
         <span>
           Break rules{" "}
           <s.Icons>

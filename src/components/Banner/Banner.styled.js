@@ -6,7 +6,7 @@ export const BannerContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 6px 0px 8px 0px;
+
   width: 100%;
   height: 52px;
   overflow: hidden;
@@ -26,6 +26,7 @@ export const Text = styled.div`
   font-size: 36px;
   font-weight: 900;
   line-height: 1;
+  padding: 6px 0px 8px 0px;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
   width: 100%;
@@ -35,7 +36,6 @@ export const Text = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     gap: 24px;
   }
 
@@ -47,8 +47,7 @@ export const Text = styled.div`
 
 export const Icons = styled.div`
   display: flex;
-  width: 36px;
-  height: 36px;
+  margin-top: 10px;
 
   & svg {
     width: 36px;
