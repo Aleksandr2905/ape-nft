@@ -15,4 +15,14 @@ export const Button = styled.button`
   background-color: transparent;
   border: none;
   color: ${theme.color.textPrimary};
+  transition: ${theme.animation.transition};
+
+  &:hover {
+    color: ${theme.color.accent};
+  }
+
+  &:focus {
+    outline: 1px solid ${theme.color.accent};
+    color: ${theme.color.accent};
+  }
 `;

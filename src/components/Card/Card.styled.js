@@ -61,6 +61,15 @@ export const WrapperCardLink = styled.a`
   height: 242px;
   margin-bottom: 24px;
   background-color: ${theme.color.accent};
+  --icon-padding: 12px;
+
+  &:hover {
+    --icon-padding: 0 0 12px 12px;
+  }
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+    --icon-padding: 0 0 12px 12px;
+  }
 
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     height: 480px;
@@ -73,7 +82,7 @@ export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding: 12px;
+  padding: var(--icon-padding);
 
   & svg {
     width: 24px;

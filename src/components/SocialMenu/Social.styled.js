@@ -22,6 +22,14 @@ export const Button = styled.a`
   backdrop-filter: blur(12px);
   background: ${theme.color.bgBtnPrimary};
 
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+
+    & svg {
+      fill: ${theme.color.textPrimary};
+    }
+  }
+
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 80px;
     height: 80px;

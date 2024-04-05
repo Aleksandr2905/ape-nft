@@ -5,11 +5,9 @@ import * as s from "./Header.styled";
 const Header = () => {
   return (
     <s.Container>
-      <a href="/" aria-label="Link to page Ape NFT">
-        <s.Icon>
-          <Logo />
-        </s.Icon>
-      </a>
+      <s.LogoLink href="/" aria-label="Link to page Ape NFT">
+        <Logo />
+      </s.LogoLink>
       <BurgerMenu />
     </s.Container>
   );

@@ -35,6 +35,13 @@ export const Button = styled.button`
     color: ${theme.color.textPrimary};
   }
 
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: ${theme.color.textPrimary};
+  }
+
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     width: 80px;
     height: 80px;

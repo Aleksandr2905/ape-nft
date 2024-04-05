@@ -38,6 +38,11 @@ export const Button = styled.button`
     color: ${theme.color.textSecondary};
   }
 
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+    color: ${theme.color.textSecondary};
+  }
+
   @media screen and (min-width: ${theme.breakpoints.desktop}) {
     border-radius: 12px;
     padding: 16px 20px;

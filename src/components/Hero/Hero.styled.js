@@ -179,6 +179,11 @@ export const Button = styled.a`
     color: ${theme.color.textPrimary};
   }
 
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+    color: ${theme.color.textPrimary};
+  }
+
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     margin-bottom: 0;
   }
