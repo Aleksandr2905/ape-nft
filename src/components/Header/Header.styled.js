@@ -51,24 +51,3 @@ export const LogoLink = styled.a`
     }
   }
 `;
-
-// export const Icon = styled.div`
-//   margin-top: 8px;
-//   width: 48px;
-//   height: 32px;
-//   cursor: pointer;
-//   transition: ${theme.animation.transition};
-
-//   & svg {
-//     fill: ${theme.color.textSecondary};
-
-//     &:hover {
-//       fill: ${theme.color.textPrimary};
-//     }
-
-//     @media screen and (min-width: ${theme.breakpoints.desktop}) {
-//       width: 72px;
-//       height: 50px;
-//     }
-//   }
-// `;

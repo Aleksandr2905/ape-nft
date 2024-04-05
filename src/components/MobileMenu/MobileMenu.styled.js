@@ -31,14 +31,26 @@ export const NavWrap = styled.div`
   gap: 8px;
 `;
 
-export const IconLogo = styled.div`
+export const LogoLink = styled.a`
   margin-top: 8px;
   width: 48px;
   height: 32px;
   cursor: pointer;
 
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+
+    & svg {
+      fill: ${theme.color.accent};
+    }
+  }
+
   & svg {
     fill: ${theme.color.textPrimary};
+
+    &:hover {
+      fill: ${theme.color.accent};
+    }
   }
 `;
 
@@ -55,6 +67,7 @@ export const CloseBtn = styled.button`
   font-size: 12px;
   font-weight: 600;
   line-height: 1.17;
+  text-transform: uppercase;
   backdrop-filter: blur(12px);
   transition: ${theme.animation.transition};
   background: ${theme.color.bgSecondary};
@@ -64,6 +77,10 @@ export const CloseBtn = styled.button`
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.color.accent};
+  }
+
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
   }
 `;
 
@@ -83,6 +100,10 @@ export const SocialBtn = styled.a`
   height: 48px;
   backdrop-filter: blur(12px);
   background: ${theme.color.bgSecondary};
+
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+  }
 `;
 
 export const Icon = styled.div`
@@ -117,4 +138,12 @@ export const NavBtn = styled.a`
   line-height: 1.21;
   text-transform: uppercase;
   color: ${theme.color.textPrimary};
+
+  &:hover {
+    color: ${theme.color.accent};
+  }
+
+  &:focus {
+    outline: 1px solid ${theme.color.textPrimary};
+  }
 `;

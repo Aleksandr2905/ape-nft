@@ -11,11 +11,9 @@ const MobileMenu = ({ onClose }) => {
   return createPortal(
     <s.Wrapper>
       <s.Container>
-        <a href="/" aria-label="Link to page Ape NFT">
-          <s.IconLogo>
-            <Logo />
-          </s.IconLogo>
-        </a>
+        <s.LogoLink href="/" aria-label="Link to page Ape NFT">
+          <Logo />
+        </s.LogoLink>
         <s.NavWrap>
           <s.CloseBtn type="button" onClick={onClose}>
             Close
