@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import NavMenu from "../NavMenu/NavMenu";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
 import * as s from "./Navigation.styled";
 
 const Navigation = () => {
@@ -15,11 +15,6 @@ const Navigation = () => {
 
   const toggleNavigationVisibility = () => {
     setIsOpenNavigation(!isOpenNavigation);
-    if (showMobileMenu) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
   };
 
   return (

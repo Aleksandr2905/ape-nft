@@ -1,6 +1,6 @@
+import { cardsArts } from "../../data/cardArts";
 import Section from "../Section/Section";
 import Slider from "../Slider/Slider";
-import { cardsArts } from "../../data/cardArts";
 import * as s from "./Arts.styled";
 
 const Arts = () => {

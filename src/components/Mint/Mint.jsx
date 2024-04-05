@@ -1,8 +1,7 @@
-import Section from "../Section/Section";
 import X from "../../assets/icons/add-sharp.svg?react";
-
-import * as s from "./Mint.styled";
+import Section from "../Section/Section";
 import Form from "../Form/Form";
+import * as s from "./Mint.styled";
 
 const Mint = () => {
   return (

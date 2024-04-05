@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
-import * as s from "./Hero.styled";
 import { heroImageAdaptive } from "../../data/heroImage";
 import Header from "../Header/Header";
+import * as s from "./Hero.styled";
 
 const Hero = () => {
   const screenWidth = useScreenWidth();
@@ -34,7 +34,7 @@ const Hero = () => {
                 srcSet={`${imageAdaptive.oneX} 1x, ${imageAdaptive.twoX} 2x`}
                 type="image/jpeg"
               />
-              <s.Image src={imageAdaptive.oneX} alt="apes" />
+              <s.Image src={imageAdaptive.oneX} alt="ape section hero" />
             </picture>
             <s.SecondaryBlock>
               <s.Button href="#mint">MEET APES</s.Button>

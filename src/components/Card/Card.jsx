@@ -28,7 +28,7 @@ const Card = ({ card }) => {
           <picture>
             <source srcSet={`${webp} 1x, ${webp2X} 2x`} type="image/webp" />
             <source srcSet={`${oneX} 1x, ${twoX} 2x`} type="image/jpeg" />
-            <s.Image src={oneX} alt={alt} />
+            <s.Image src={oneX} alt={alt} loading="lazy" />
           </picture>
         </s.WrapperCardImg>
       );

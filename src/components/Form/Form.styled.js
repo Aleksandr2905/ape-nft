@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { theme } from "../../stylesheet/theme";
 import { Report } from "notiflix/build/notiflix-report-aio";
+import { theme } from "../../stylesheet/theme";
 
 export const Form = styled.form`
   display: flex;

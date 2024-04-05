@@ -1,7 +1,7 @@
-import Section from "../Section/Section";
-import { cardFaq } from "../../data/cardFaq";
-import * as s from "./Faq.styled";
 import { useState } from "react";
+import { cardFaq } from "../../data/cardFaq";
+import Section from "../Section/Section";
+import * as s from "./Faq.styled";
 
 const Faq = () => {
   const [activeItem, setActiveItem] = useState(1);
@@ -20,7 +20,8 @@ const Faq = () => {
                 <s.Image
                   srcSet={`${item.oneX} 1x, ${item.twoX} 2x`}
                   src={item.oneX}
-                  alt={`"Card faq ${item.id}"`}
+                  alt={`"Image ape faq ${item.id}"`}
+                  loading="lazy"
                 />
               </s.ImageWrap>
               <s.Content>

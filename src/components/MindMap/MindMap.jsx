@@ -1,8 +1,8 @@
+import { useScreenWidth } from "../../hooks/useScreenWidth";
+import { cardsMindMap } from "../../data/cardsMindMap";
 import Section from "../Section/Section";
 import Slider from "../Slider/Slider";
-import { cardsMindMap } from "../../data/cardsMindMap";
 import Card from "../Card/Card";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
 import * as s from "./MindMap.styled";
 
 const MindMap = () => {

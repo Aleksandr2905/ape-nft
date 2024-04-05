@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Report } from "notiflix/build/notiflix-report-aio";
 import { schema } from "../../helpers/validation";
 import InputForm from "../Input/InputForm";
 import * as s from "./Form.styled";
-import { Report } from "notiflix/build/notiflix-report-aio";
 
 const Form = () => {
   const [buttonText, setButtonText] = useState("MINT");

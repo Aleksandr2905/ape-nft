@@ -1,8 +1,8 @@
 import { createPortal } from "react-dom";
 import Logo from "../../assets/icons/logo.svg?react";
 import { modalNavBtn } from "../../data/modalNavBtn";
-import Footer from "../Footer/Footer";
 import { social } from "../../data/social";
+import Footer from "../Footer/Footer";
 import * as s from "./MobileMenu.styled";
 
 const modal = document.getElementById("modal");

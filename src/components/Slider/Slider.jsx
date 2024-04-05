@@ -1,11 +1,11 @@
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useRef } from "react";
+import { theme } from "../../stylesheet/theme";
 import Card from "../Card/Card";
 import * as s from "./Slider.styled";
-import { theme } from "../../stylesheet/theme";
 
 const Slider = ({ cards }) => {
   const refSlider = useRef(null);
@@ -48,8 +48,12 @@ const Slider = ({ cards }) => {
         {slideCards}
       </Swiper>
       <s.ButtonWrapper>
-        <s.Button onClick={handlePrev}>Prev</s.Button>
-        <s.Button onClick={handleNext}>Next</s.Button>
+        <s.Button type="button" onClick={handlePrev}>
+          Prev
+        </s.Button>
+        <s.Button type="button" onClick={handleNext}>
+          Next
+        </s.Button>
       </s.ButtonWrapper>
     </>
   );

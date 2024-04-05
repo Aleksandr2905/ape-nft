@@ -18,6 +18,7 @@ export const WrapItem = styled.div`
 export const Item = styled.li`
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 8px;
   position: relative;
   padding: 8px 8px 10px;
@@ -118,6 +119,7 @@ export const Content = styled.div`
   gap: 10px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    width: 339px;
     gap: 12px;
   }
 

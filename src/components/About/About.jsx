@@ -1,10 +1,10 @@
-import Section from "../Section/Section";
+import { useEffect, useState } from "react";
 import X from "../../assets/icons/add-sharp.svg?react";
-import * as s from "./About.styled";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { aboutImageAdaptive } from "../../data/aboutImage";
-import { useEffect, useState } from "react";
+import Section from "../Section/Section";
 import Banner from "../Banner/Banner";
+import * as s from "./About.styled";
 
 const About = () => {
   const screenWidth = useScreenWidth();
@@ -43,7 +43,11 @@ const About = () => {
               srcSet={`${imageAdaptive.oneX} 1x, ${imageAdaptive.twoX} 2x`}
               type="image/jpeg"
             />
-            <s.Img src={imageAdaptive.oneX} alt="apes" />
+            <s.Img
+              src={imageAdaptive.oneX}
+              alt="ape section about"
+              loading="lazy"
+            />
           </picture>
         </s.Wrapper>
       </Section>

@@ -63,7 +63,7 @@ export const cardsArts = [
     twoX: card1TwoX,
     webp: card1Webp,
     webp2X: card1Webp2X,
-    alt: "slide 1",
+    alt: "Image ape slide 1",
   },
   {
     id: 2,
@@ -72,7 +72,7 @@ export const cardsArts = [
     twoX: card2TwoX,
     webp: card2Webp,
     webp2X: card2Webp2X,
-    alt: "slide 2",
+    alt: "Image ape slide 2",
   },
   {
     id: 3,
@@ -81,7 +81,7 @@ export const cardsArts = [
     twoX: card3TwoX,
     webp: card3Webp,
     webp2X: card3Webp2X,
-    alt: "slide 3",
+    alt: "Image ape slide 3",
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ export const cardsArts = [
     twoX: card4TwoX,
     webp: card4Webp,
     webp2X: card4Webp2X,
-    alt: "slide 4",
+    alt: "Image ape slide 4",
   },
   {
     id: 5,
@@ -99,7 +99,7 @@ export const cardsArts = [
     twoX: card5TwoX,
     webp: card5Webp,
     webp2X: card5Webp2X,
-    alt: "slide 5",
+    alt: "Image ape slide 5",
   },
   {
     id: 6,
@@ -108,7 +108,7 @@ export const cardsArts = [
     twoX: card6TwoX,
     webp: card6Webp,
     webp2X: card6Webp2X,
-    alt: "slide 6",
+    alt: "Image ape slide 6",
   },
   {
     id: 7,
@@ -117,7 +117,7 @@ export const cardsArts = [
     twoX: card7TwoX,
     webp: card7Webp,
     webp2X: card7Webp2X,
-    alt: "slide 7",
+    alt: "Image ape slide 7",
   },
   {
     id: 8,
@@ -126,7 +126,7 @@ export const cardsArts = [
     twoX: card8TwoX,
     webp: card8Webp,
     webp2X: card8Webp2X,
-    alt: "slide 8",
+    alt: "Image ape slide 8",
   },
   {
     id: 9,
@@ -135,7 +135,7 @@ export const cardsArts = [
     twoX: card9TwoX,
     webp: card9Webp,
     webp2X: card9Webp2X,
-    alt: "slide 9",
+    alt: "Image ape slide 9",
   },
   {
     id: 10,
@@ -144,7 +144,7 @@ export const cardsArts = [
     twoX: card10TwoX,
     webp: card10Webp,
     webp2X: card10Webp2X,
-    alt: "slide 10",
+    alt: "Image ape slide 10",
   },
   {
     id: 11,
@@ -153,7 +153,7 @@ export const cardsArts = [
     twoX: card11TwoX,
     webp: card11Webp,
     webp2X: card11Webp2X,
-    alt: "slide 11",
+    alt: "Image ape slide 11",
   },
   {
     id: 12,
@@ -162,7 +162,7 @@ export const cardsArts = [
     twoX: card12TwoX,
     webp: card12Webp,
     webp2X: card12Webp2X,
-    alt: "slide 12",
+    alt: "Image ape slide 12",
   },
   {
     id: 13,
@@ -171,7 +171,7 @@ export const cardsArts = [
     twoX: card13TwoX,
     webp: card13Webp,
     webp2X: card13Webp2X,
-    alt: "slide 13",
+    alt: "Image ape slide 13",
   },
   {
     id: 14,
@@ -180,6 +180,6 @@ export const cardsArts = [
     twoX: card14TwoX,
     webp: card14Webp,
     webp2X: card14Webp2X,
-    alt: "slide 14",
+    alt: "Image ape slide 14",
   },
 ];
