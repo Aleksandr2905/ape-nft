@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useForm, useWatch } from "react-hook-form";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Report } from "notiflix/build/notiflix-report-aio";
 import { schema } from "../../helpers/validation";
@@ -11,52 +11,21 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isDirty },
+    formState: { errors },
     reset,
-    setValue,
-    control,
   } = useForm({
-    resolver: yupResolver(schema),
     mode: "onChange",
+    resolver: yupResolver(schema),
   });
 
-  const saveInLocalStorage = (key, value) => {
-    window.localStorage.setItem(key, value);
-  };
-
-  const getLocalStorageValueFor = (key) => {
-    return window.localStorage.getItem(key);
-  };
-
-  const username = useWatch({ control, name: "username" });
-  const wallet = useWatch({ control, name: "wallet" });
-
-  useEffect(() => {
-    if (isDirty) {
-      const formData = JSON.stringify({ username, wallet });
-      saveInLocalStorage("formData", formData);
-    }
-  }, [isDirty, username, wallet]);
-
-  useEffect(() => {
-    const localStorageFormData = getLocalStorageValueFor("formData");
-    if (localStorageFormData) {
-      const { username: savedUsername, wallet: savedWallet } =
-        JSON.parse(localStorageFormData);
-      setValue("username", savedUsername ?? "");
-      setValue("wallet", savedWallet ?? "");
-    }
-  }, [setValue]);
-
-  const onSubmit = (formData) => {
+  const onSubmit = ({ username, wallet }) => {
     try {
-      const { username, wallet } = formData;
       const user = username.replace("@", "").toUpperCase();
       const walletAddress = wallet.toUpperCase();
       setButtonText("MINTED");
       Report.success(
         "Congratulations!",
-        `Dear ${user}, You have successfully monetized! Your wallet: ${walletAddress}. Thank you for using our service.`,
+        `Dear, ${user}, You have successfully monetized! Your wallet: ${walletAddress} Thank you for using our service.`,
         "Ok",
         () => {
           setTimeout(() => {
@@ -65,7 +34,6 @@ const Form = () => {
         }
       );
       reset();
-      localStorage.removeItem("formData");
     } catch (error) {
       setButtonText("ERROR");
     }
@@ -76,14 +44,14 @@ const Form = () => {
       <InputForm
         name="username"
         type="text"
-        placeholder="@username"
+        placeholder={"@username"}
         register={register}
         errors={errors}
       />
       <InputForm
         name="wallet"
         type="text"
-        placeholder="Wallet address"
+        placeholder={"Wallet address"}
         register={register}
         errors={errors}
       />
