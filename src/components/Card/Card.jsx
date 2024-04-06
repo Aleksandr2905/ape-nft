@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import * as s from "./Card.styled";
 
 const Card = ({ card }) => {
@@ -35,6 +36,20 @@ const Card = ({ card }) => {
     default:
       return;
   }
+};
+
+Card.propTypes = {
+  card: PropTypes.shape({
+    name: PropTypes.oneOf(["text", "link", "img"]).isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string,
+    icon: PropTypes.func,
+    oneX: PropTypes.string,
+    twoX: PropTypes.string,
+    webp: PropTypes.string,
+    webp2X: PropTypes.string,
+    alt: PropTypes.string,
+  }).isRequired,
 };
 
 export default Card;

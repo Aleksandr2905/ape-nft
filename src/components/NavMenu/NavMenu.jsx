@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { modalNavBtn } from "../../data/modalNavBtn";
 import * as s from "./NavMenu.styled";
 
@@ -11,6 +12,10 @@ const NavMenu = ({ onClose }) => {
       ))}
     </s.NavWrapper>
   );
+};
+
+NavMenu.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 export default NavMenu;

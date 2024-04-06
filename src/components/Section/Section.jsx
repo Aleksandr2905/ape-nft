@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import * as s from "./Section.styled";
 
-const Section = ({ id, children, title, titleAccent }) => {
+const Section = ({ id, children, title }) => {
   return (
     <s.Section id={id}>
       <s.Container>
@@ -9,6 +10,12 @@ const Section = ({ id, children, title, titleAccent }) => {
       </s.Container>
     </s.Section>
   );
+};
+
+Section.propTypes = {
+  id: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Section;
