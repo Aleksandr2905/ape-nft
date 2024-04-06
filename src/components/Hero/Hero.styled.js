@@ -99,13 +99,13 @@ export const MainTitle = styled.h1`
   font-size: 44px;
   font-weight: 900;
   line-height: 1;
-  letter-spacing: 0.01em;
+  /* letter-spacing: 0.01em; */
   margin-bottom: 8px;
 
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     font-size: 92px;
     line-height: 1;
-    word-spacing: 154px;
+    word-spacing: 150px;
     margin-bottom: 16px;
   }
 
