@@ -1,4 +1,5 @@
 import X from "../../assets/icons/add-sharp.svg?react";
+import { mint } from "../../data/dataText";
 import Section from "../Section/Section";
 import Form from "../Form/Form";
 import * as s from "./Mint.styled";
@@ -10,10 +11,7 @@ const Mint = () => {
         <s.Icon>
           <X />
         </s.Icon>
-        <s.Text>
-          Join the YACHT APE community to be one of the first to receive our
-          limited edition NFT
-        </s.Text>
+        <s.Text>{mint.text}</s.Text>
         <Form />
       </s.Wrapper>
     </Section>

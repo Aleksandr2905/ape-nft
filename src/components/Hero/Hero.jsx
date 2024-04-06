@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { heroImageAdaptive } from "../../data/heroImage";
+import { hero } from "../../data/dataText";
 import Header from "../Header/Header";
 import * as s from "./Hero.styled";
 
@@ -9,6 +10,7 @@ const Hero = () => {
   const [imageAdaptive, setImageAdaptive] = useState(
     heroImageAdaptive[screenWidth]
   );
+  const { accentTitle, mainTitle, accentTitleSecond, text } = hero;
 
   useEffect(() => {
     setImageAdaptive(heroImageAdaptive[screenWidth]);
@@ -21,9 +23,9 @@ const Hero = () => {
         <s.Container>
           <s.Content>
             <s.WrapTitle>
-              <s.AccentTitle>diD yOu seE iT ?</s.AccentTitle>
-              <s.MainTitle>YACHT APES</s.MainTitle>
-              <s.AccentTitleSecond>Apes aRe eveRywhere</s.AccentTitleSecond>
+              <s.AccentTitle>{accentTitle}</s.AccentTitle>
+              <s.MainTitle>{mainTitle}</s.MainTitle>
+              <s.AccentTitleSecond>{accentTitleSecond}</s.AccentTitleSecond>
             </s.WrapTitle>
             <picture>
               <source
@@ -38,10 +40,7 @@ const Hero = () => {
             </picture>
             <s.SecondaryBlock>
               <s.Button href="#mint">MEET APES</s.Button>
-              <s.Text>
-                Yacht Ape is a collection of unique digital apes that you can
-                own in NFT format
-              </s.Text>
+              <s.Text>{text}</s.Text>
             </s.SecondaryBlock>
           </s.Content>
         </s.Container>
