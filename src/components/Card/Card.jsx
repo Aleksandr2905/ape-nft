@@ -41,7 +41,7 @@ const Card = ({ card }) => {
 Card.propTypes = {
   card: PropTypes.shape({
     name: PropTypes.oneOf(["text", "link", "img"]).isRequired,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     text: PropTypes.string,
     icon: PropTypes.func,
     oneX: PropTypes.string,
