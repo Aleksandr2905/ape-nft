@@ -31,6 +31,7 @@ export const Text = styled.div`
   color: ${theme.color.textPrimary};
   width: 100%;
   white-space: nowrap;
+  gap: 24px;
 
   & span {
     display: flex;
@@ -47,10 +48,14 @@ export const Text = styled.div`
 
 export const Icons = styled.div`
   display: flex;
-  margin-top: 10px;
+  margin-top: 8px;
 
   & svg {
     width: 36px;
     height: 36px;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.tablet}) {
+    margin-top: 10px;
   }
 `;
